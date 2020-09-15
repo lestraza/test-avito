@@ -1,0 +1,63 @@
+.progress-bar {
+    width: 200px;
+    height: 20px;
+    background-color: rgba(36, 41, 41, 0.11);
+}
+
+.progress-bar__level {
+    width: 50%;
+    display: inline-block;
+    height: 20px;
+}
+
+.progress-bar__level--green {
+    background-color: green;
+}
+.progress-bar__level--orange {
+    background-color: orange;
+}
+.progress-bar__level--red {
+    background-color: red;
+}
+
+.progress-bar {
+    width: 200px;
+    height: 20px;
+    background-color: rgba(36, 41, 41, 0.11);
+
+    &__level {
+        width: 50%;
+        display: inline-block;
+        height: 20px;
+
+        &--green {
+            background-color: green;
+        }
+        &--orange {
+            background-color: orange;
+        }
+        &--red {
+            background-color: red;
+        }
+    }
+}
+
+.main {
+    width: 300px;
+    height: 50px;
+    background-color: rgba(67, 119, 119, 0.315);
+    display: flex;
+    &__container {
+        height: 50%;
+        width: 50%;
+        > div {
+            height: 50%;
+            width: 50%;
+
+            &:nth-child(2) {
+                background-color: pink;
+            }
+        }
+        
+    }
+}
