@@ -61,3 +61,40 @@
         
     }
 }
+
+.button {
+    width: 72px;
+    height: 32px;
+    background-color: aqua;
+    margin-top: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+.glide {
+    width: 300px;
+    height: 100px;
+    background-color: burlywood;
+    animation: glide .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes glide {
+    0% {
+        height: 0;
+    }
+    // 50% {
+    //     height: 50px;
+    // }
+    100% {
+        height: 100px;
+    }
+}
+
+@keyframes glide1 {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 100px;
+    }
+}
